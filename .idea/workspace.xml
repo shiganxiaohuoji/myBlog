@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58f099d9-1cc9-458c-b760-4a3fb48b8aa3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/main/java/com/myblog/main/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/main/java/com/myblog/main/Entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/main/java/com/myblog/main/Mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/main/java/com/myblog/main/MyBlogApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/main/java/com/myblog/main/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/main/java/com/myblog/main/Service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Main/src/test/java/com/myblog/main/MyBlogApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/TheWelcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/WelcomeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/icons/IconCommunity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/icons/IconDocumentation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/icons/IconEcosystem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/icons/IconSupport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/components/icons/IconTooling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/layout/page/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBlog_Vue/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NujxMCqvxXRpwii4RL35s1udJv" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/ALL_Pg/4.3_myBlog/myBlog/myBlog_Main&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\ALL_Pg\4.3_myBlog\myBlog" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58f099d9-1cc9-458c-b760-4a3fb48b8aa3" name="Changes" comment="" />
+      <created>1680521106958</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680521106958</updated>
+      <workItem from="1680521108112" duration="116000" />
+      <workItem from="1680521328877" duration="87000" />
+      <workItem from="1680521463823" duration="77000" />
+      <workItem from="1681894753762" duration="158000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
