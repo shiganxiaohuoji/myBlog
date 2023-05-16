@@ -13,11 +13,11 @@
           </el-menu-item>
           
           <!-- 有子类的导航 -->
-          <el-sub-menu :index="item.path" v-for="(item, index) in hasChildren" :key="index" >
+          <el-sub-menu :index="item.path" v-for="(item, index) in hasChildren" :key="index" :base-path="item.path" >
             <template #title>
               <el-icon></el-icon>{{ item.meta.title}}
             </template>
-              <el-menu-item :index="subitem.path" v-for="subitem in item.children" :key="subitem.path">
+              <el-menu-item :index="subitem.path" v-for="subitem in item.children" :key="resolvePath(subitem.path)">
                 <i class="el-icon-setting"></i>
                 <span>{{subitem.meta.title}}</span>
               </el-menu-item>
@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import path from 'path'
 import Logo from '../SideBar/Logo.vue'
 import {Search, House} from '@element-plus/icons-vue'
 export default {
@@ -64,12 +65,12 @@ export default {
         
       },
       resolvePath(routePath) {
-				if (isExternal(routePath)) {
-					return routePath
-				}
-				if (isExternal(this.basePath)) {
-					return this.basePath
-				}
+				// if (isExternal(routePath)) {
+				// 	return routePath
+				// }
+				// if (isExternal(this.basePath)) {
+				// 	return this.basePath
+				// }
 				return path.resolve(this.basePath, routePath)
 			}
     }
