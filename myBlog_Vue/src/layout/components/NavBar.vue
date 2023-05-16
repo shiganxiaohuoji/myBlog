@@ -13,7 +13,7 @@
 
 <script>
 import Hamburger from '@/components/Hamburger/index.vue'
-import Breadcrumb from '../../../components/Breadcrumb/index.vue'
+import Breadcrumb from '../../components/Breadcrumb/index.vue'
 export default {
   components: { Breadcrumb,Hamburger },
 

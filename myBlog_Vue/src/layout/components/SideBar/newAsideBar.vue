@@ -6,12 +6,13 @@
         text-color="#bfcbd9" 
         active-text-color="#409EFF" 
         router>
-
+          <!-- 没有子类的导航 -->
           <el-menu-item :index="item.path" v-for="item in noChildren" :key="item.path">
             <i class="el-icon-document"></i>
             <span>{{ item.name }}</span>
           </el-menu-item>
-
+          
+          <!-- 有子类的导航 -->
           <el-sub-menu :index="item.path" v-for="(item, index) in hasChildren" :key="index" >
             <template #title>
               <el-icon></el-icon>{{ item.meta.title}}
@@ -61,7 +62,16 @@ export default {
       },
       handleclick(){
         
-      }
+      },
+      resolvePath(routePath) {
+				if (isExternal(routePath)) {
+					return routePath
+				}
+				if (isExternal(this.basePath)) {
+					return this.basePath
+				}
+				return path.resolve(this.basePath, routePath)
+			}
     }
 
 }

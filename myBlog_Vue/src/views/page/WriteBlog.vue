@@ -1,5 +1,8 @@
 <template>
-  <h1>写博客</h1>
+  <div class="write-blog">
+    <h1>写博客</h1>
+  </div>
+  
 </template>
 
 <script>

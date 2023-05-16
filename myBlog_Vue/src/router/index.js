@@ -1,33 +1,44 @@
 import { createRouter, createWebHistory} from 'vue-router'
+import Layout from '@/layout/index.vue'
 
 const history = createWebHistory()
 
 const router = createRouter({
     history,
     routes:[
+        // {
+        //     path: '/',
+        //     name: '首页',
+        //     component: () => import('@/views/layout/index.vue'),
+        //     meta: {title: '首页'},
+        //     hidden: true
+        // },
         {
             path: '/',
-            name: '首页',
-            component: () => import('@/views/layout/index.vue'),
-            meta: {title: '首页'},
-            hidden: true
-        },
-        {
-            path: '/DashBoard',
-            name: 'DashBoard',
-            component: () => import('../views/Home.vue'),
-            meta: {title: 'DashBoard'}
+            component: Layout,
+            redirect: '/dashboard',
+            meta: {title: 'Dashboard', icon:''},
+            children: [
+                {
+                    path: 'dashboard',
+                    name: 'Dashboard',
+                    component: () => import('@/views/Home.vue'),
+                    // component: () => import('@/views/page/WriteBlog.vue'),
+                    meta: {title: 'Dashboard', icon: 'dashboard'}
+                }
+            ]
         },
         {
             path: '/blog',
             name: 'Blog',
-            redirect: '/blog/write',
+            redirect: '/blog',
+            component: Layout,
             meta: {title: '博客管理', icon:''},
             children: [
                 {
                     path: 'write',
                     name: 'WriteBlog',
-                    component: () => import('../views/page/WriteBlog.vue'),
+                    component: () => import('@/views/page/WriteBlog.vue'),
                     meta: {title: '写文章', icon: 'el-icon-edit'}
                 },
                 {
