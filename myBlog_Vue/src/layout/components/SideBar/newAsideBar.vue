@@ -17,7 +17,7 @@
             <template #title>
               <el-icon></el-icon>{{ item.meta.title}}
             </template>
-              <el-menu-item :index="subitem.path" v-for="subitem in item.children" :key="resolvePath(subitem.path)">
+              <el-menu-item :index="subitem.path" v-for="subitem in item.children" :key="resolvePath(item.path,subitem.path)">
                 <i class="el-icon-setting"></i>
                 <span>{{subitem.meta.title}}</span>
               </el-menu-item>
@@ -64,14 +64,17 @@ export default {
       handleclick(){
         
       },
-      resolvePath(routePath) {
+      resolvePath(basePath,routePath) {
+      //basePath = this.basePath;
+      //allPath = this.basePath.concat(routePath)
+      return this.basePath.concat(routePath);
 				// if (isExternal(routePath)) {
 				// 	return routePath
 				// }
 				// if (isExternal(this.basePath)) {
 				// 	return this.basePath
 				// }
-				return path.resolve(this.basePath, routePath)
+				//return path.resolve(this.basePath, routePath)
 			}
     }
 
