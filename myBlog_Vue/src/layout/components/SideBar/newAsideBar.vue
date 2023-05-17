@@ -17,7 +17,7 @@
             <template #title>
               <el-icon></el-icon>{{ item.meta.title}}
             </template>
-              <el-menu-item :index="subitem.path" v-for="subitem in item.children" :key="resolvePath(item.path,subitem.path)">
+              <el-menu-item :index="subitem.path" v-for="subitem in item.children" :key="subitem.path">
                 <i class="el-icon-setting"></i>
                 <span>{{subitem.meta.title}}</span>
               </el-menu-item>
@@ -41,6 +41,7 @@ export default {
     },
     created(){
       console.log(this.$router)
+      this.resolvePath
       // getList
     },
     computed: {
@@ -65,14 +66,15 @@ export default {
         
       },
       resolvePath(basePath,routePath) {
-        let basePath = basePath;
+        let a = basePath;
 				// if (isExternal(routePath)) {
 				// 	return routePath
 				// }
 				// if (isExternal(this.basePath)) {
 				// 	return this.basePath
 				// }
-				return basePath.concat(routePath)
+        console.log(a.concat(routePath))
+				return a.concat(routePath)
 			}
     }
 

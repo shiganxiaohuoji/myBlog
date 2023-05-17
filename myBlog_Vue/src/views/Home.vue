@@ -10,6 +10,12 @@ export default {
     name: 'test',
     components: {},
 
+    methods:{
+      testButton(){
+        
+      }
+    }
+
 
 }
 </script>

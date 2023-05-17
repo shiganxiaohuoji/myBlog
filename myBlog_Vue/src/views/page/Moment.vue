@@ -1,5 +1,5 @@
 <template>
-  <h1>写动态</h1>
+  <mavon-editor v-model="value"></mavon-editor>
 </template>
 
 <script>

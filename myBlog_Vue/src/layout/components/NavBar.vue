@@ -1,9 +1,9 @@
 <template>
   <div class="navbar">
     <!-- 面板折叠折叠 -->
-    <Hamburger />
+    <Hamburger class="navbar-hamburger" />
     <!-- 面包屑 -->
-    <Breadcrumb style="line-height:3" class="navbar-breadcrumb"/>
+    <Breadcrumb  class="navbar-breadcrumb"/>
     
     <div class="navbar-usermenu">
         <!-- 最右侧用户 -->
@@ -20,12 +20,33 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .navbar{
-    display: flex;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+    user-select: none;
+
+    .navbar-hamburger{
+      line-height: 2;
+      height: 100%;
+      float: left;
+      cursor: pointer;
+      transition: background .3s;
+      -webkit-tap-highlight-color: transparent;
+
+			&:hover {
+				background: rgba(0, 0, 0, .025)
+			}
+    }
+
+    .navbar-breadcrumb{
+      float: left;
+      line-height: 4;
+    }
     
 }
-.navbar-breadcrumb{
-    padding-left: 20px;
-}
+
 </style>

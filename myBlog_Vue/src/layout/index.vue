@@ -23,7 +23,7 @@ export default {
 <style>
 .sidebar-container{
     position: fixed;
-   width: 200px;
+   width: 190px;
    height: 100%;
    background-color: #2b2f3a;
 }
@@ -40,7 +40,7 @@ export default {
 .main-contianer{
     height: 100%;
     width: 100%;
-    padding-left: 200px;
+    padding-left: 190px;
     /* position: relative; */
 }
 
