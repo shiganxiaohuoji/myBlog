@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import path from 'path'
+import path from 'path-browserify'
 import Logo from '../SideBar/Logo.vue'
 import {Search, House} from '@element-plus/icons-vue'
 export default {
@@ -65,16 +65,14 @@ export default {
         
       },
       resolvePath(basePath,routePath) {
-      //basePath = this.basePath;
-      //allPath = this.basePath.concat(routePath)
-      return this.basePath.concat(routePath);
+        let basePath = basePath;
 				// if (isExternal(routePath)) {
 				// 	return routePath
 				// }
 				// if (isExternal(this.basePath)) {
 				// 	return this.basePath
 				// }
-				//return path.resolve(this.basePath, routePath)
+				return basePath.concat(routePath)
 			}
     }
 
