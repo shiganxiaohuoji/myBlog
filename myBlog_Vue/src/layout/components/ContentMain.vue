@@ -9,9 +9,9 @@
   <!-- vue3写法 -->
   <section class="content-container">
 <router-view v-slot="{ Component }">
-  <transition>
+  <!-- <transition> -->
     <component :is="Component" />
-  </transition>
+  <!-- </transition> -->
 </router-view>
 </section>
 </template>

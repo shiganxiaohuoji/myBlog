@@ -14,6 +14,8 @@ class MyBlogApiApplicationTests {
 
     @Test
     void contextLoads() throws Exception{
+
+        System.out.println("测试");
         System.out.println("获取数据库连接为:" + dataSource.getConnection());
     }
 

@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp, VueElement } from 'vue'
 import App from './App.vue'
 import router from './router'
 import 'element-plus/dist/index.css'
@@ -17,6 +17,6 @@ app.use(ElementPlus)
 app.use(mavonEditor)
 // app.use(store)
 
-for ([name, comp] of Object.entries(ElementPlusIconsVue)) {
-    app.component(name, comp);
-  }
+// for ([name, comp] of Object.entries(ElementPlusIconsVue)) {
+//     app.component(name, comp);
+//   }

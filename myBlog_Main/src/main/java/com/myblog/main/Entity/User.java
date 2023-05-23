@@ -12,6 +12,6 @@ public class User implements Serializable {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
-    private String name;
-    private String price;
+    private String username;
+    private String password;
 }

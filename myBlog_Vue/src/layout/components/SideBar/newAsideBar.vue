@@ -40,27 +40,27 @@ export default {
       }
     },
     created(){
-      console.log(this.$router)
+      // console.log(this.$router)
       this.resolvePath
       // getList
     },
     computed: {
       // 判断导航栏是否有子节点
       noChildren() {
-        console.log("这是noChildren")
-        console.log( this.$router.options.routes.filter(item => !item.children))
+        // console.log("这是noChildren")
+        // console.log( this.$router.options.routes.filter(item => !item.children))
         return this.$router.options.routes.filter(item => !item.children)
       },
       hasChildren() {
-        console.log("这是hasChildren")
-        console.log( this.$router.options.routes.filter(item => item.children))
+        // console.log("这是hasChildren")
+        // console.log( this.$router.options.routes.filter(item => item.children))
         return this.$router.options.routes.filter(item => item.children)
       }
     },
     methods: {
       getList(){
         this.MenuList = this.$router.options.routes
-        console.log(this.MenuList)
+        // console.log(this.MenuList)
       },
       handleclick(){
         
@@ -73,7 +73,7 @@ export default {
 				// if (isExternal(this.basePath)) {
 				// 	return this.basePath
 				// }
-        console.log(a.concat(routePath))
+        // console.log(a.concat(routePath))
 				return a.concat(routePath)
 			}
     }

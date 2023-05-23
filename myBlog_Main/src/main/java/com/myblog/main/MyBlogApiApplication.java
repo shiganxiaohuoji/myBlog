@@ -10,8 +10,12 @@ import org.springframework.context.annotation.ComponentScan;
 @MapperScan
 public class MyBlogApiApplication {
 
+
     public static void main(String[] args) {
+        int a = 1;
         SpringApplication.run(MyBlogApiApplication.class, args);
+        int b = a + 1;
+        System.out.println(b);
     }
 
 }
